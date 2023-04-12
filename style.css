@@ -302,12 +302,14 @@ body {
   max-width: 140rem;
   padding: 2.6rem 3.2rem;
   display: flex;
-  gap: 30rem;
+  gap: 35rem;
   background-color: #292d32;
   margin: 0 auto;
   border-bottom-right-radius: 0.9rem;
-  border-bottom-left-radius: 0.9rem;
+  border-bottom-left-radius: 1.2rem;
   font-weight: 400;
+  margin-bottom: 3.2rem;
+  height: 30rem;
 }
 .footer-logo {
   display: flex;
@@ -318,6 +320,7 @@ body {
 }
 .footer-logo-txt {
   font-size: 2.4rem;
+  font-weight: 600;
 }
 .footer-logo-img {
   width: 4.8rem;
@@ -328,7 +331,7 @@ body {
 }
 .footer-heading {
   font-size: 2.4rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2.6rem;
   font-weight: 600;
 }
 .footer-list {
@@ -351,9 +354,19 @@ body {
   color: #fff;
   transition: all 0.5s;
 }
-.footer-list li:hover,
-.footer-list li:active {
+.footer-list a li:hover,
+.footer-list a li:active {
   font-size: 1.6rem;
   text-decoration: none;
-  color: #ddd;
+  color: #339af0;
+}
+.contact-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.copy-right {
+  font-size: 1.6rem;
+  display: inline-block;
+  margin-left: 1.2rem;
+  font-weight: 600;
 }
