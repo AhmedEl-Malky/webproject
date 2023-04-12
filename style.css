@@ -146,18 +146,6 @@ body {
 .main-nav-link:active {
   color: #297bc0;
 }
-/* .main-nav-link.main-nav-cta:link,
-.main-nav-link.main-nav-cta:visited {
-  background-color: #e67e22;
-  color: #fff;
-  padding: 1.2rem 2.4rem;
-  border-radius: 0.9rem;
-}
-.main-nav-link.main-nav-cta:hover,
-.main-nav-link.main-nav-cta:active {
-  background-color: #cf711f;
-} */
-
 /* ========================== HERO SECTION ========================= */
 .hero-heading {
   font-size: 4.4rem;
@@ -279,8 +267,9 @@ body {
   padding: 1.6rem;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   text-decoration: none;
-  border: 0.5rem solid #339af0;
   border-radius: 1.2rem;
+  transition: all 0.5s;
+  border: 0.2rem solid #f7f7f7;
 }
 .service-div:hover,
 .service-div:active {
@@ -308,3 +297,63 @@ body {
   font-weight: 500;
 }
 /* ============================= FOOTER SECTION ========================== */
+.footer {
+  color: #fff;
+  max-width: 140rem;
+  padding: 2.6rem 3.2rem;
+  display: flex;
+  gap: 30rem;
+  background-color: #292d32;
+  margin: 0 auto;
+  border-bottom-right-radius: 0.9rem;
+  border-bottom-left-radius: 0.9rem;
+  font-weight: 400;
+}
+.footer-logo {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.4rem;
+}
+.footer-logo-txt {
+  font-size: 2.4rem;
+}
+.footer-logo-img {
+  width: 4.8rem;
+}
+.footer-icon {
+  width: 8rem;
+  height: 8rem;
+}
+.footer-heading {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.footer-list li,
+.footer-list li {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s;
+}
+.footer-list a:link,
+.footer-list a:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s;
+}
+.footer-list li:hover,
+.footer-list li:active {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #ddd;
+}
