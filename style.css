@@ -209,6 +209,9 @@ body {
   background-color: #f2f2f2f2;
   padding: 2.4rem 3.2rem;
 }
+.logo-home {
+  text-decoration: none;
+}
 .logo {
   display: flex;
   gap: 0.8rem;
@@ -510,16 +513,19 @@ body {
 /* ============================= MEDICAL TIPS PAGE   ========================== */
 .tips-container {
   color: #343a40;
-  max-width: 80rem;
-  margin: 0 auto;
+  max-width: 100rem;
+  margin: 2rem auto;
+}
+.tips-list {
+  margin-left: 3rem;
 }
 .flex {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 0rem 4.8rem rgba(0, 0, 0, 0.075);
   display: flex;
   justify-content: space-between;
   background-color: #f2f2f2f2;
   padding: 1.6rem 3.2rem;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
   border-radius: 1.2rem;
   font-size: 1.6rem;
   line-height: 1.6;
