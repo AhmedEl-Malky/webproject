@@ -323,7 +323,7 @@ body {
 }
 
 /* ============================= FEATURED IN SECTION ========================== */
-#featured--section {
+.featured--section {
   /* background-color: #f7f7f7; */
   max-width: 130rem;
   margin: 0 auto;
@@ -335,7 +335,7 @@ body {
   text-align: center;
 }
 
-#featured--section a {
+.featured--section a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -348,11 +348,22 @@ body {
   font-size: 1.5rem;
   border-radius: 0.9rem;
 }
-#featured--section a span {
+.featured--section a span {
   margin: auto;
 }
-
-#featured--section a:hover {
+.featured-title {
+  /* display: inline-block; */
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: #aaa;
+  letter-spacing: 0.17rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1.2rem;
+}
+.featured--section a:hover {
   background-color: #ddd;
   transition: all 0.5s;
   color: #343a40;
@@ -520,12 +531,12 @@ body {
   margin-left: 3rem;
 }
 .flex {
-  box-shadow: 0 0rem 4.8rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: space-between;
   background-color: #f2f2f2f2;
   padding: 1.6rem 3.2rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
   border-radius: 1.2rem;
   font-size: 1.6rem;
   line-height: 1.6;
@@ -544,6 +555,7 @@ body {
   font-size: 1.8rem;
 }
 .title {
+  /* box-shadow: 0 0rem 4.8rem rgba(0, 0, 0, 0.35); */
   background-color: #f2f2f2f2;
   padding: 1.6rem 3.2rem;
   font-size: 2.4rem;
