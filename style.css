@@ -209,7 +209,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #f2f2f2f2;
-  padding: 3.6rem 8rem;
+  padding: 4rem 8.6rem;
   /* max-width: 160rem;
   margin: 0 auto; */
 }
@@ -224,11 +224,11 @@ body {
 .logo-txt {
   font-weight: 700;
   color: #339af0;
-  font-size: 2.4rem;
+  font-size: 3rem;
 }
 .logo-img {
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 4.8rem;
+  height: 4.8rem;
 }
 .main-nav-list {
   list-style: none;
@@ -453,7 +453,7 @@ body {
 /* ============================= FOOTER SECTION ========================== */
 .footer {
   color: #fff;
-  max-width: 140rem;
+  /* max-width: 140rem; */
   padding: 2.6rem 3.2rem;
   display: flex;
   gap: 35rem;
@@ -462,7 +462,7 @@ body {
   border-bottom-right-radius: 0.9rem;
   border-bottom-left-radius: 1.2rem;
   font-weight: 400;
-  margin-bottom: 3.2rem;
+  /* margin-bottom: 3.2rem; */
   height: 30rem;
 }
 .footer-logo {
@@ -522,6 +522,7 @@ body {
   height: 1.8rem;
 }
 .copy-right {
+  color: #343a40;
   font-size: 1.6rem;
   display: inline-block;
   margin-left: 1.2rem;
