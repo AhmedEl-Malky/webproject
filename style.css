@@ -451,18 +451,18 @@ body {
   font-weight: 500;
 }
 /* ============================= FOOTER SECTION ========================== */
+.footer-section {
+  background-color: #292d32;
+}
 .footer {
   color: #fff;
-  /* max-width: 140rem; */
   padding: 2.6rem 3.2rem;
   display: flex;
   gap: 35rem;
-  background-color: #292d32;
   margin: 0 auto;
   border-bottom-right-radius: 0.9rem;
   border-bottom-left-radius: 1.2rem;
   font-weight: 400;
-  /* margin-bottom: 3.2rem; */
   height: 30rem;
 }
 .footer-logo {
@@ -482,9 +482,16 @@ body {
 .footer-logo-img {
   width: 4.8rem;
 }
+footer a {
+  text-decoration: none;
+}
+.footer-icons {
+  display: flex;
+  gap: 3rem;
+}
 .footer-icon {
-  width: 8rem;
-  height: 8rem;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 .footer-heading {
   font-size: 2.4rem;
@@ -518,12 +525,18 @@ body {
   color: #339af0;
 }
 .contact-icon {
-  width: 1.8rem;
-  height: 1.8rem;
+  stroke: #339af0;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.copyright-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 1.6rem;
 }
 .copy-right {
-  color: #343a40;
-  font-size: 1.6rem;
+  color: #ccc;
+  font-size: 1.4rem;
   display: inline-block;
   margin-left: 1.2rem;
   font-weight: 600;
