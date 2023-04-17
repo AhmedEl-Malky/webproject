@@ -1,14 +1,16 @@
 // ============================= LOGIN POPUP =========================
-document.querySelector("#login-button").addEventListener("click", function () {
-  document.querySelector(".popout").classList.add("active");
-});
-document
-  .querySelector(".popout .close-btn")
-  .addEventListener("click", function () {
-    document.querySelector(".popout").classList.remove("active");
-  });
+// document.querySelector("#login-button").addEventListener("click", function () {
+//   document.querySelector(".popout").classList.add("active");
+// });
+// document
+//   .querySelector(".popout .close-btn")
+//   .addEventListener("click", function () {
+//     document.querySelector(".popout").classList.remove("active");
+//   });
 // ============================= ACCORDION =========================
-document.querySelector(".title").addEventListener("click", function () {
-  document.querySelector(".acc-content").classList.add("active");
-  document.querySelector(".title").classList.add("active");
+const boxes = document.querySelectorAll(".box");
+boxes.forEach((box) => {
+  box.addEventListener("click", () => {
+    box.classList.toggle("active");
+  });
 });
