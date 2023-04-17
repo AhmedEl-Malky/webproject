@@ -1,0 +1,79 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+body {
+  font-family: "rubik", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+.accordion .box {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  padding: 16px;
+  position: relative;
+  overflow: hidden;
+}
+/* .icon {
+  width: 32px;
+  height: 32px;
+}
+.num {
+  font-size: 32px;
+  font-weight: 500;
+} */
+.box .title::after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f078";
+  font-weight: 800;
+  position: absolute;
+  right: 1.5rem;
+  cursor: pointer;
+  top: 0.2rem;
+  font-size: 1.8rem;
+}
+.box .acc-content {
+  position: relative;
+  padding: 1.6rem 3.2rem;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+  /* overflow-y: auto; */
+}
+.accordion .box .acc-content.active {
+  height: 150px;
+}
+.accordion .box {
+  width: 800px;
+  margin: 20px auto;
+  gap: 15px;
+  row-gap: 24px;
+  border-top: 0.6rem solid #339af0;
+  border-radius: 0.4rem;
+}
+.accordion .box .title {
+  cursor: pointer;
+  position: relative;
+  padding: 0rem 0.8rem;
+  font-size: 32px;
+  font-weight: 600;
+  align-items: center;
+  color: #343a40;
+}
+ul {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+li {
+  color: #444;
+}
+.acc-txt {
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
