@@ -1,79 +1,94 @@
-.accordion {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
 body {
   font-family: "rubik", sans-serif;
+}
+html {
+  font-size: 62.5%;
 }
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
 }
-.accordion .box {
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.box {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  padding: 16px;
-  position: relative;
+  padding: 1.6rem;
+}
+.acc-content {
+  max-height: 0;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+  transition: all 0.5s ease;
 }
-/* .icon {
-  width: 32px;
-  height: 32px;
-}
-.num {
-  font-size: 32px;
-  font-weight: 500;
-} */
-.box .title::after {
-  font-family: "Font Awesome 6 Free";
-  content: "\f078";
-  font-weight: 800;
-  position: absolute;
-  right: 1.5rem;
-  cursor: pointer;
-  top: 0.2rem;
-  font-size: 1.8rem;
-}
-.box .acc-content {
-  position: relative;
-  padding: 1.6rem 3.2rem;
-  height: 0;
-  overflow: hidden;
-  transition: all 0.5s;
-  /* overflow-y: auto; */
-}
-.accordion .box .acc-content.active {
-  height: 150px;
-}
-.accordion .box {
-  width: 800px;
-  margin: 20px auto;
-  gap: 15px;
+.box {
+  width: 100rem;
+  margin: 2rem auto;
+  gap: 1.6rem;
   row-gap: 24px;
-  border-top: 0.6rem solid #339af0;
+  border-top: 0.7rem solid #339af0;
   border-radius: 0.4rem;
 }
-.accordion .box .title {
+.title-div {
+  cursor: pointer;
+  padding: 0 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.acc-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.title {
   cursor: pointer;
   position: relative;
-  padding: 0rem 0.8rem;
-  font-size: 32px;
+  padding: 0.8rem;
+  font-size: 3.2rem;
   font-weight: 600;
   align-items: center;
   color: #343a40;
 }
+
 ul {
-  margin-left: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
+  margin-top: 1.8rem;
 }
 li {
-  color: #444;
+  margin-left: 1.8rem;
+}
+
+.acc-img {
+  max-width: 100%;
 }
 .acc-txt {
+  font-size: 1.8rem;
   color: #444;
   line-height: 1.5;
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
+}
+.box.active .acc-content {
+  max-height: 100rem;
+  padding: 0.8rem 1.6rem;
+  animation: fade 0.9s ease-in-out;
+}
+.box.active .acc-icon {
+  transform: rotate(180deg);
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
 }
