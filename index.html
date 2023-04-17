@@ -12,7 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="general.css" />
   </head>
   <body>
     <!-- ============================== Main header ============================ -->
@@ -367,6 +366,17 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script>
+      document
+        .querySelector("#login-button")
+        .addEventListener("click", function () {
+          document.querySelector(".popout").classList.add("active");
+        });
+      document
+        .querySelector(".popout .close-btn")
+        .addEventListener("click", function () {
+          document.querySelector(".popout").classList.remove("active");
+        });
+    </script>
   </body>
 </html>
