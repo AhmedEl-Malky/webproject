@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 /* Box sizing rules */
 *,
@@ -31,6 +31,7 @@ ol[role="list"] {
 html:focus-within {
   scroll-behavior: smooth;
 }
+
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -39,7 +40,7 @@ body {
   font-family: "rubik", sans-serif;
   /* background: linear-gradient(90deg, var(--grey) 31px, transparent 1px) 50%,
     linear-gradient(180deg, var(--grey) 31px, var(--blue) 1px) 50%; */
-  background-size: 3.2rem 3.2rem;
+  background-size: 32px 32px;
   color: var(--dark);
 }
 
@@ -120,7 +121,7 @@ select {
   position: absolute;
   bottom: calc(100% + 1rem);
   right: 0;
-  width: 42rem;
+  width: 420px;
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.1);
