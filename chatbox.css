@@ -38,9 +38,6 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "rubik", sans-serif;
-  /* background: linear-gradient(90deg, var(--grey) 31px, transparent 1px) 50%,
-    linear-gradient(180deg, var(--grey) 31px, var(--blue) 1px) 50%; */
-  background-size: 32px 32px;
   color: var(--dark);
 }
 
@@ -121,7 +118,7 @@ select {
   position: absolute;
   bottom: calc(100% + 1rem);
   right: 0;
-  width: 420px;
+  width: 42rem;
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.1);
@@ -182,7 +179,7 @@ select {
   right: 0;
   background: var(--white);
   padding: 0.5rem 0;
-  width: 120px;
+  width: 12rem;
   box-shadow: 0.25rem 0.25rem 1.5rem rgba(0, 0, 0, 0.1);
   transform: scale(0);
   transform-origin: top right;
@@ -209,7 +206,7 @@ select {
   display: flex;
   flex-direction: column;
   grid-row-gap: 1rem;
-  max-height: 300px;
+  max-height: 30rem;
   overflow-y: auto;
 }
 .chatbox-message-item {
@@ -256,7 +253,7 @@ select {
 }
 .chatbox-message-submit {
   font-size: 1.25rem;
-  color: var(--blue);
+  color: #339af0;
   background: transparent;
   border: none;
   outline: none;
@@ -270,7 +267,7 @@ select {
 /* CHATBOX */
 
 /* BREAKPOINTS */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 57.6rem) {
   .chatbox-message-wrapper {
     width: calc(100vw - 2rem);
   }
@@ -280,3 +277,149 @@ select {
   }
 }
 /* BREAKPOINTS */
+/* ======================================= MAIN CONTAINER================================ */
+.main-container {
+  /* position: relative; */
+  max-width: 88rem;
+  margin: 0 auto;
+}
+.chatbox-title {
+  color: #339af0;
+  font-size: 3rem;
+  text-align: center;
+}
+.chatbox-subheading {
+  font-size: 1.6rem;
+  color: #343a40;
+  text-align: center;
+}
+/* ============================= ACCORDDION ================== */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  /* align-items:center; */
+  margin-top: 5rem;
+  gap: 8rem;
+}
+
+.acc-content {
+  max-height: 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+  transition: all 0.5s ease;
+  padding: 0 2rem;
+}
+.box {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  max-width: 40rem;
+  margin-left: 25rem;
+  gap: 1.6rem;
+  row-gap: 24px;
+  border-top: 0.7rem solid #339af0;
+  border-radius: 0.4rem;
+}
+.title-div {
+  cursor: pointer;
+  padding: 0 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.acc-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.acc-title {
+  cursor: pointer;
+  position: relative;
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  align-items: center;
+  color: #343a40;
+}
+
+.accordion ul {
+  margin-top: 1.8rem;
+}
+.accordion li {
+  margin-left: 1.8rem;
+}
+
+.acc-img {
+  max-width: 100%;
+}
+.acc-txt {
+  font-size: 1.8rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 2.4rem;
+}
+.box.active .acc-content {
+  max-height: 100rem;
+  padding: 0.8rem 1.6rem;
+  animation: fade 0.9s ease-in-out;
+}
+.box.active .acc-icon {
+  transform: rotate(180deg);
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+/* ============================== Main header ============================ */
+.main-header {
+  /* position: relative; */
+  box-shadow: 0 0.75rem 4.5rem rgba(0, 0, 0, 0.1);
+  /* height: 8rem; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2f2;
+  padding: 0.5rem 4.5rem;
+}
+.logo-home {
+  text-decoration: none;
+}
+.logo {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.logo-txt {
+  font-weight: 700;
+  color: #339af0;
+  font-size: 1.875rem;
+}
+.logo-img {
+  max-width: 3rem;
+  max-height: 3rem;
+}
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.main-nav-link:visited,
+.main-nav-link:link {
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #47a4f2;
+  transition: all 0.4s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #297bc0;
+}

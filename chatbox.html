@@ -11,39 +11,132 @@
     <title>Chatbox</title>
   </head>
   <body>
-    <div class="main-container">
-      <div class="chatbox-wrapper">
-        <div class="chatbox-toggle">
-          <i class="bx bx-message-dots"></i>
+    <!-- ============================== Main HEADER ============================ -->
+    <header class="main-header">
+      <a href="index.html" class="logo-home">
+        <div class="logo">
+          <h1 class="logo-txt">Health-BOX</h1>
+          <img src="img/logo.png" alt="" class="logo-img" />
         </div>
-        <div class="chatbox-message-wrapper">
-          <div class="chatbox-message-header">
-            <div class="chatbox-message-profile">
-              <img src="img/doctor.jpg" alt="" class="chatbox-message-image" />
-              <div>
-                <h4 class="chatbox-message-name">Jonathan Doe</h4>
-                <p class="chatbox-message-status">Offline</p>
-              </div>
-            </div>
-            <div class="chatbox-message-dropdown">
-              <i
-                class="bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle"
-              ></i>
-              <ul class="chatbox-message-dropdown-menu">
-                <li>
-                  <a href="#">Search</a>
-                </li>
-                <li>
-                  <a href="#">Report</a>
-                </li>
-              </ul>
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="tips.html" class="main-nav-link">Medical Tips</a></li>
+          <li><a href="chatbox.html" class="main-nav-link">Consult</a></li>
+          <li><a href="#" class="main-nav-link">Link 3</a></li>
+          <li><a href="#" class="main-nav-link">Link 4</a></li>
+          <li><a href="#" class="main-nav-link main-nav-cta">Link 5</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ============================== Main CONTAINER ============================ -->
+    <div class="main-container">
+      <h1 class="chatbox-title">Welcome TO Consulting-BOX</h1>
+      <p class="chatbox-subheading">
+        Choose doctor to consult and enter chat room with him/her
+      </p>
+      <div class="accordion">
+        <div class="box">
+          <div class="title-div">
+            <p class="acc-title">Choose specialization</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="acc-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+          <div class="acc-content">
+            <div class="acc-txt">
+              <input type="radio" name="specialization" id="" />
+              <label for="">Surgery</label><br />
+              <input type="radio" name="specialization" id="" />
+              <label for="">Surgery</label><br />
+              <input type="radio" name="specialization" id="" />
+              <label for="">Surgery</label><br />
+              <input type="radio" name="specialization" id="" />
+              <label for="">Surgery</label><br />
+              <input type="radio" name="specialization" id="" />
+              <label for="">Surgery</label><br />
             </div>
           </div>
-          <div class="chatbox-message-content">
-            <h4 class="chatbox-message-no-message">
-              You don't have message yet!
-            </h4>
-            <!-- <div class="chatbox-message-item sent">
+        </div>
+        <div class="box">
+          <div class="title-div">
+            <p class="acc-title">Choose Doctor</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="acc-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+          <div class="acc-content">
+            <div class="acc-txt">
+              <input type="radio" name="specialization" id="" />
+              <label for="">Dr / </label><br />
+              <input type="radio" name="specialization" id="" />
+              <label for="">DR / </label><br />
+              <input type="radio" name="specialization" id="" />
+              <label for="">DR / </label><br />
+              <input type="radio" name="specialization" id="" />
+              <label for="">DR / </label><br />
+              <input type="radio" name="specialization" id="" />
+              <label for="">DR / </label><br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================== Chatbox ============================ -->
+    <div class="chatbox-wrapper">
+      <div class="chatbox-toggle">
+        <i class="bx bx-message-dots"></i>
+      </div>
+      <div class="chatbox-message-wrapper">
+        <div class="chatbox-message-header">
+          <div class="chatbox-message-profile">
+            <img src="img/doctor.jpg" alt="" class="chatbox-message-image" />
+            <div>
+              <h4 class="chatbox-message-name">Jonathan Doe</h4>
+              <p class="chatbox-message-status">Offline</p>
+            </div>
+          </div>
+          <div class="chatbox-message-dropdown">
+            <i
+              class="bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle"
+            ></i>
+            <ul class="chatbox-message-dropdown-menu">
+              <li>
+                <a href="#">Search</a>
+              </li>
+              <li>
+                <a href="#">Report</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="chatbox-message-content">
+          <h4 class="chatbox-message-no-message">
+            You don't have message yet!
+          </h4>
+          <!-- <div class="chatbox-message-item sent">
 					<span class="chatbox-message-item-text">
 						Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
 					</span>
@@ -55,22 +148,22 @@
 					</span>
 					<span class="chatbox-message-item-time">08:30</span>
 				</div> -->
-          </div>
-          <div class="chatbox-message-bottom">
-            <form action="#" class="chatbox-message-form">
-              <textarea
-                rows="1"
-                placeholder="Type message..."
-                class="chatbox-message-input"
-              ></textarea>
-              <button type="submit" class="chatbox-message-submit">
-                <i class="bx bx-send"></i>
-              </button>
-            </form>
-          </div>
+        </div>
+        <div class="chatbox-message-bottom">
+          <form action="#" class="chatbox-message-form">
+            <textarea
+              rows="1"
+              placeholder="Type message..."
+              class="chatbox-message-input"
+            ></textarea>
+            <button type="submit" class="chatbox-message-submit">
+              <i class="bx bx-send"></i>
+            </button>
+          </form>
         </div>
       </div>
     </div>
+
     <script>
       // MESSAGE INPUT
       const textarea = document.querySelector(".chatbox-message-input");
@@ -188,6 +281,12 @@
 
         return text.length > 0;
       }
+      const boxes = document.querySelectorAll(".box");
+      boxes.forEach((box) => {
+        box.addEventListener("click", () => {
+          box.classList.toggle("active");
+        });
+      });
     </script>
   </body>
 </html>
