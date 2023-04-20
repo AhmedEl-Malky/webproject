@@ -3,6 +3,7 @@ body {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 * {
   box-sizing: border-box;
@@ -20,7 +21,7 @@ html {
   color: #339af0;
   font-size: 2rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .tips-img {
   width: 25rem;
