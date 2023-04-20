@@ -13,13 +13,18 @@ html {
 .tips-header {
   /* display: inline-block; */
   max-width: 130rem;
-  margin: 3.2rem auto;
-  padding: 1.6rem;
+  display: flex;
+  margin: 0rem auto;
+  padding: 0rem;
   text-align: center;
   color: #339af0;
-  font-size: 2.4rem;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: space-between;
 }
-
+.tips-img {
+  width: 25rem;
+}
 .accordion {
   display: flex;
   flex-direction: column;

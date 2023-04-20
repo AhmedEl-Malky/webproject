@@ -31,7 +31,10 @@ ol[role="list"] {
 html:focus-within {
   scroll-behavior: smooth;
 }
-
+* {
+  padding: 0rem;
+  margin: 0rem;
+}
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -389,9 +392,9 @@ select {
 }
 /* ============================== Main header ============================ */
 .main-header {
-  /* position: relative; */
+  position: relative;
   box-shadow: 0 0.75rem 4.5rem rgba(0, 0, 0, 0.1);
-  /* height: 8rem; */
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -419,6 +422,7 @@ select {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  padding: 0;
   align-items: center;
 }
 .main-nav-link:visited,
