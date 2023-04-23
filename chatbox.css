@@ -427,6 +427,7 @@ select {
 }
 .main-nav-link:visited,
 .main-nav-link:link {
+  border-radius: 1rem;
   font-weight: 500;
   font-size: 1.25rem;
   text-decoration: none;
@@ -435,5 +436,5 @@ select {
 }
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #297bc0;
+  color: #246ca8;
 }
