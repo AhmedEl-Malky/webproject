@@ -7,7 +7,8 @@
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="chatbox.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general.css" />
     <title>Chatbox</title>
   </head>
   <body>
@@ -42,17 +43,17 @@
         </div>
         <img src="img/chating.png" alt="" class="chatbox-img" />
       </div>
-      <div class="accordion">
-        <div class="box">
-          <div class="title-div">
-            <p class="acc-title">Choose specialization</p>
+      <div class="accordion chat-accordion">
+        <div class="box chatbox">
+          <div class="title-div chat-title-div">
+            <p class="acc-title chat-acc-title">Choose specialization</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="acc-icon"
+              class="acc-icon chat-acc-icon"
             >
               <path
                 stroke-linecap="round"
@@ -61,8 +62,8 @@
               />
             </svg>
           </div>
-          <div class="acc-content">
-            <div class="acc-txt">
+          <div class="acc-content chat-acc-content">
+            <div class="acc-txt chat-acc-txt">
               <input type="radio" name="specialization" id="" />
               <label for="">Surgery</label><br />
               <input type="radio" name="specialization" id="" />
@@ -76,16 +77,16 @@
             </div>
           </div>
         </div>
-        <div class="box">
-          <div class="title-div">
-            <p class="acc-title">Choose Doctor</p>
+        <div class="box chatbox">
+          <div class="title-div chat-title-div">
+            <p class="acc-title chat-acc-title">Choose Doctor</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="acc-icon"
+              class="acc-icon chat-acc-icon"
             >
               <path
                 stroke-linecap="round"
@@ -94,10 +95,10 @@
               />
             </svg>
           </div>
-          <div class="acc-content">
-            <div class="acc-txt">
+          <div class="acc-content chat-acc-content">
+            <div class="acc-txt chat-acc-txt">
               <input type="radio" name="specialization" id="" />
-              <label for="">DR.Jonathan Doe</label><br />
+              <label for="">DR.</label><br />
               <input type="radio" name="specialization" id="" />
               <label for="">DR.</label><br />
               <input type="radio" name="specialization" id="" />
@@ -121,7 +122,7 @@
           <div class="chatbox-message-profile">
             <img src="img/doctor.jpg" alt="" class="chatbox-message-image" />
             <div>
-              <h4 class="chatbox-message-name">Jonathan Doe</h4>
+              <h4 class="chatbox-message-name">DR.Name</h4>
               <p class="chatbox-message-status">Offline</p>
             </div>
           </div>
